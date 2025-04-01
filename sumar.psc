@@ -1,13 +1,16 @@
-Algoritmo SumarDosNumeros
-	Definir n1, n2, sumar Como Entero
+Algoritmo Sumar_n_Numeros
+	Definir n1, x , sumar Como Entero
+	sumar<-0
 	
-	Escribir "ingresa un  numero"
-	Leer n1
-	Escribir "ingresa otro numero"
-	leer n2
+	Escribir "cuantos numeros desea sumar"
+	Leer x
 	
-	sumar = n1 + n2
+	Para i=1 Hasta x Con Paso 1 Hacer
+		Escribir "ingrese el ",i "° numero"
+		leer n1
+		sumar = sumar + n1
+	Fin Para
 	
-	Escribir "Resultado:  ",n1 " + ",n2 "= ", sumar
+	Escribir "Resultado: ", sumar
 	
-	FinAlgoritmo
+FinAlgoritmo
